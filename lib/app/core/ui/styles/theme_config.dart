@@ -6,9 +6,9 @@ class ThemeConfig {
   ThemeConfig._();
 
   static final theme = ThemeData(
-    scaffoldBackgroundColor: Colors.black,
+    scaffoldBackgroundColor: const Color(0XFF2D2B34),
     appBarTheme: const AppBarTheme(
-      backgroundColor: Colors.black,
+      backgroundColor: Color(0XFF2D2B34),
       elevation: 0,
       centerTitle: true,
       iconTheme: IconThemeData(

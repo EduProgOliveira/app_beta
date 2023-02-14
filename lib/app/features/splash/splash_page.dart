@@ -31,8 +31,9 @@ class _SplashPageState extends BaseState<SplashPage, SplashController> {
           hideLoader();
           showError(state.errorMessage ?? 'Erro não conhecido');
         },
-        loaded: () {
+        loaded: () async {
           hideLoader();
+          await Future.delayed(const Duration(seconds: 2));
           Navigator.pushReplacementNamed(context, HomeRouter.router);
         },
       );
